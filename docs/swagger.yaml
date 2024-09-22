@@ -1,0 +1,25 @@
+basePath: /api/v1
+info:
+  contact: {}
+  description: APIs for all the calculations/features.
+  termsOfService: http://swagger.io/terms/
+  title: Visual Flow APIs
+  version: "1.0"
+paths:
+  /:
+    get:
+      consumes:
+      - '*/*'
+      description: get the status of server.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Show the status of server.
+      tags:
+      - HealthCheck
+swagger: "2.0"
